@@ -1,5 +1,6 @@
 
 *.zip
+dev*
 
 # Prerequisites
 *.d

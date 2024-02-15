@@ -19,4 +19,4 @@ burn: build
 	# 115200: baud rate de la liaison serial usb arduino-pc
 
 clean:
-	rm build/main build/main.hex
+	rm -f build/main build/main.hex

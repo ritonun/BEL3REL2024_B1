@@ -17,3 +17,6 @@ burn: build
 	avrdude -F -V -c arduino -p m328p -P /dev/ttyACM0 -b 115200 -U flash:w:build/main.hex
 	# /dev/ttyACM0: port USB ou l'arduino est connecte (linux)
 	# 115200: baud rate de la liaison serial usb arduino-pc
+
+clean:
+	rm build/main build/main.hex

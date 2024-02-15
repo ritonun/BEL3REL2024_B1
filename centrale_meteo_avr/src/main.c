@@ -4,20 +4,18 @@
 #include "usart.h"
 
 int main(void) {
-    char serialCharacter;
+    uint8_t data;
     DDRB |= (1 << PB5);
 
     USART_Init(MYUBRR);
-    //initUSART();
-    USART_print_str("Hello World!\r\n");
+    USART_print_str("Setup OK!\r\n");
 
     while(1) {
-        // USART_print_str("new com\r\n");
-        /*
-        PORTB = (1 << PB5);
-        _delay_ms(1000);
-        PORTB = 0x00;
-        _delay_ms(1000);
-        */
+        data = USART_rx_byte();
+        USART_tx_byte(data);
+        USART_print_str((const char)data);
+        USART_print_str("\r\n");
     }
+
+    return 0;
 }

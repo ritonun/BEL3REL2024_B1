@@ -9,10 +9,11 @@ L3 EEA R.E.L., 2024
 ```
 centrale_meteo/		# Code Arduino du projet, Fichier principale  
 centrale_meteo_avr/	# Code en C du projet (AVR), juste pour tester  
-dev_proto/		# Fichier pour tester des fonctionnalites, prototypage rapide  
+test/		        # Fichier pour tester des fonctionnalites, prototypage rapide  
 lib_arduino/		# Librairies arduino telecharger  
-res/			# Images, Documents, etc... pour le rapport  
-README.md		# Info generale sur le projet  
-.gitignore		# Config git  
+res/			    # Images, Documents, etc... pour le rapport  
+README.md		    # Info generale sur le projet  
+.gitignore		    # Config git  
 ```
-
+## Documentation
+Toute la documentation est sur notion.com.

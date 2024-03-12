@@ -3,6 +3,7 @@
 *.zip
 dev*
 build/
+backup/
 
 # Prerequisites
 *.d
